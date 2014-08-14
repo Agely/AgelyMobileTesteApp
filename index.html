@@ -13,18 +13,42 @@
     <script type="text/javascript" src="cordova.js"></script>
 	<script type="text/javascript" src="barcodescanner.js"></script>
     <script type="text/javascript" src="childbrowser.js"></script>
-	
-    <script>
-		function sair(){
-			
-			navigator.app.exitApp();
-		}
-    </script>
-    
+
 </head>
 <body>
     
     <a href="javascript:sair();">Sair</a>
+	<br><br><br>
+    <div id="recebeContent"></div>
     
+    <script>
+		$(document).ready(function() {
+            
+			jQuery.ajax({  
+				type: "POST",  
+				url: "http://sistema.agely.com.br/mobile_teste/mobile?tela=login", 
+				
+				beforeSend: function() {
+				
+					$("#recebeContent").html("requisitando");
+				},success: function( data ){
+					
+					$("#recebeContent").html(data);
+						
+				},complete: function (transport) { 
+					
+					if (transport.status != 200){
+					
+						alert("Tente de novo!");
+					}
+				}   
+			});
+        });
+	
+		function sair(){
+			
+			navigator.app.exitApp();
+		}
+    </script>    
 </body>
 </html>
