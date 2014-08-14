@@ -13,45 +13,11 @@
     <script type="text/javascript" src="cordova.js"></script>
 	<script type="text/javascript" src="barcodescanner.js"></script>
     <script type="text/javascript" src="childbrowser.js"></script>
-    
-    <script>
-		
-		$(document).ready(function() {
-            
-			$("#iframeGeral").hide();
-			$("#carregando").show();
-        });	
-		
-		function sairMobile(){
-		
-			alert("dreamweaver");
-			navigator.app.exitApp();
-		}
-		
-		setTimeout("exibirIframe()", 2000);
-		
-		function exibirIframe(){
-			
-			$("#iframeGeral").show();
-			$("#carregando").hide();
-			
-			//http://sistema.agely.com.br/mobile_teste/mobile?tela=login
-			//http://127.0.0.1:8888/mobile?tela=login
-			$("#iframeGeral").attr("src","http://sistema.agely.com.br/mobile_teste/mobile?tela=login")
-				.attr("height",Number($(window).height())-5);
-		}
-	</script>
+
 </head>
 <body>
-        
-		<iframe id="iframeGeral" width="100%"></iframe>
-		<div id="carregando">	
-            <div align="center"> 
-                <img src="img\logo.png">
-                
-            </div>
+	<a href="sair.html">Sair</a>
     
-            <div align='center'><img src='css/carregando.gif' /></div>
-		</div>
+    <a href="http://duzani.com.br/site/">Duzani</a>
 </body>
 </html>

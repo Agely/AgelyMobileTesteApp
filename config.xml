@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.phonegap.agely_teste.mobile"
+        id        = "com.phonegap.agely_teste_app.mobile"
         version   = "1.0.0">
-    <name>Agely Mobile Teste</name>
+    <name>Agely Mobile Teste App</name>
 
     <description>
         Agely Mobile Teste
