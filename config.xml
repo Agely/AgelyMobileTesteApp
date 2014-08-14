@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.phonegap.agely_teste.mobile"
+        version   = "1.0.0">
+    <name>Agely Mobile Teste</name>
+
+    <description>
+        Agely Mobile Teste
+    </description>
+
+    <author href="http://phonegap.com" email="support@phonegap.com">
+        Agely
+    </author>
+
+    <gap:plugin name="com.phonegap.plugins.barcodescanner"/>
+
+    <feature name="http://api.phonegap.com/1.0/device" />
+    <feature name="debug-server" required="true">
+       <param name="domain" value="http://debug.phonegap.com"/>
+       <param name="key" value="willoughby"/>
+    </feature>
+
+    <preference name="phonegap-version" value="3.3.0" />
+    <preference name="orientation"      value="default" />
+    <preference name="target-device"    value="universal" />
+    <preference name="fullscreen"       value="false" />
+    <preference name="webviewbounce"    value="false" />
+
+    <icon src="res/icon/icon.png" />
+
+    <!-- <gap:splash src="res/screen/screen.png"  />  -->
+
+    <!-- content src="http://www.w3.org/2010/05/video/mediaevents.html" / -->
+</widget>
